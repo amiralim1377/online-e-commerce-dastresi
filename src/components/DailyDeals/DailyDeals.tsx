@@ -1,3 +1,4 @@
+import dailyDealsData from "@/data/dailyDealsData";
 import GridWrapperDailyDeals from "../GridWrapperDailyDeals";
 
 export default function DailyDeals() {
@@ -9,7 +10,7 @@ export default function DailyDeals() {
           تخفیف های روزانه دسترسی
         </h1>
       </div>
-      <GridWrapperDailyDeals />
+      <GridWrapperDailyDeals products={dailyDealsData} />
     </div>
   );
 }

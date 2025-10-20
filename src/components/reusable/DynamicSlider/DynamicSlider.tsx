@@ -86,7 +86,7 @@ export default function DynamicSlider({
                 {/* 💰 قیمت */}
                 <p className="text-sm text-primary font-medium mt-auto">
                   {item.price != null
-                    ? `${Number(item.price).toLocaleString()} تومان`
+                    ? `${Number(item.price).toString()} تومان`
                     : "ناموجود"}
                 </p>
               </div>

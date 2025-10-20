@@ -2,7 +2,7 @@ import HeroSectionSlider from "../HeroSectionSlider";
 
 export default function HeroSection() {
   return (
-    <div className="">
+    <div className=" ">
       <HeroSectionSlider />
     </div>
   );
