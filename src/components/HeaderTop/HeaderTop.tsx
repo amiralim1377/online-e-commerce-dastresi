@@ -7,11 +7,18 @@ export default function HeaderTop() {
   return (
     <div className="flex justify-between items-center ">
       <section className="flex items-center gap-4">
-        <Image src={"/dastresi-logo.svg"} width={100} height={100} alt="logo" />
+        <Image
+          src="/dastresi-logo.svg"
+          alt="logo"
+          width={100}
+          height={100}
+          className="w-16 h-auto sm:w-16 md:w-24 lg:w-28"
+        />
+
         <HeaderInputSearch />
         <NavHeaderTopLinks />
       </section>
-      <section className="md:flex hidden items-center gap-4 justify-between">
+      <section className="lg:flex hidden items-center gap-4 justify-between">
         <CartIconWithBadge />
         <button className="bg-brand hover:bg-secondary text-white p-3 rounded-xl transition duration-500">
           ورود و ثبت نام

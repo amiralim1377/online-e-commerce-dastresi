@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 export default function HeaderInputSearch() {
   return (
-    <div className="relative hidden md:block w-full max-w-lg">
+    <div className="relative hidden lg:block w-full max-w-lg">
       <input
         type="text"
         placeholder="جست و جوی محصولات"

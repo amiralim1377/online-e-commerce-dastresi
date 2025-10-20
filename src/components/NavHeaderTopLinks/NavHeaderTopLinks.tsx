@@ -21,7 +21,7 @@ const navHeaderLinks = [
 
 export default function NavHeaderTopLinks() {
   return (
-    <div className=" hidden md:flex gap-4 w-md">
+    <div className=" hidden lg:flex gap-4 w-md">
       {navHeaderLinks.map((link, i) => (
         <Link
           key={i}

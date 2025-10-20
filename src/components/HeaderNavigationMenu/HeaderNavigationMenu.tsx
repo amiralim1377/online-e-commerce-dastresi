@@ -4,11 +4,10 @@ import navigationMenuData from "@/data/navigationMenu";
 
 export default function NavigationMenuComponent() {
   return (
-    <nav dir="rtl" className="w-full">
+    <nav dir="rtl" className="w-full hidden lg:block">
       <ul className="flex justify-between w-full py-4">
         {navigationMenuData.map((item) => (
           <li key={item.path} className="relative group">
-            {/* لینک اصلی */}
             <Link
               href={item.path}
               className="px-3 text-primary py-2 rounded-md hover:text-hover flex items-center gap-2"
@@ -17,7 +16,6 @@ export default function NavigationMenuComponent() {
               {item.children && <span className="text-xs inline-block">▼</span>}
             </Link>
 
-            {/* زیرمنو */}
             {item.children && (
               <ul className="absolute border rounded-b-md top-full right-0 mt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 {item.children.map((child) => (

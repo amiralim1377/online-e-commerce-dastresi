@@ -130,3 +130,7 @@ body {
   --color-hover: #fe5f55;
   --color-site-bg: #fafafa;
 }
+
+.custom-container {
+  @apply container mx-auto px-4 sm:px-6 lg:p-8;
+}

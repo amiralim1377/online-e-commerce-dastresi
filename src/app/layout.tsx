@@ -1,7 +1,9 @@
-import Header from "@/components/Header/Header";
+import Header from "@/components/Header";
 import { shabnam } from "./font/font";
 import "./globals.css";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Footer";
+import FooterContact from "@/components/FooterContact";
+import FooterCopyright from "@/components/FooterCopyright";
 
 export default function RootLayout({
   children,
@@ -15,7 +17,9 @@ export default function RootLayout({
 
         <main className="flex-1 bg-site-bg">{children}</main>
 
+        <FooterContact />
         <Footer />
+        <FooterCopyright />
       </body>
     </html>
   );
