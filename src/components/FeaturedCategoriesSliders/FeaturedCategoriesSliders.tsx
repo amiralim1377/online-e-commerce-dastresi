@@ -43,8 +43,8 @@ export default function FeaturedCategoriesSliders() {
         className="w-full"
       >
         {baseCategories.map((item) => (
-          <SwiperSlide key={item.id}>
-            <div className="flex flex-col items-center justify-center bg-white shadow rounded-xl p-4 cursor-pointer hover:shadow-lg transition">
+          <SwiperSlide className="p-2" key={item.id}>
+            <div className="flex flex-col   items-center justify-center  shadow rounded-xl p-4 cursor-pointer hover:shadow-lg transition">
               <div className="w-48 h-48 relative mb-2">
                 <Image
                   src={item.image}
