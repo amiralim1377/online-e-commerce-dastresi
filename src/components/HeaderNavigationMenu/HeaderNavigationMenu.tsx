@@ -2,7 +2,7 @@
 import Link from "next/link";
 import navigationMenuData from "@/data/navigationMenu";
 
-export default function NavigationMenuComponent() {
+export default function HeaderNavigationMenu() {
   return (
     <nav dir="rtl" className="w-full hidden lg:block">
       <div className="mx-auto w-full  px-2 sm:px-4 lg:px-6 xl:px-8">

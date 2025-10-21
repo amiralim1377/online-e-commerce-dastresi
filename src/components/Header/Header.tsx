@@ -1,4 +1,4 @@
-import HeaderNavigationMenu from "../HeaderNavigationMenu/HeaderNavigationMenu";
+import HeaderNavigationMenu from "../HeaderNavigationMenu";
 import HeaderTop from "../HeaderTop";
 
 export default function Header() {
