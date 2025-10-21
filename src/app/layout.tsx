@@ -12,6 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="rtl">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${shabnam.variable}   min-h-screen flex flex-col`}>
         <Header />
 

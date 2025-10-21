@@ -40,7 +40,7 @@ export default function LatestArticlesSlider() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-sm font-medium text-gray-800">
+                  <h3 className="text-xs font-medium line-clamp-6  text-primary">
                     {item.title}
                   </h3>
                 </div>

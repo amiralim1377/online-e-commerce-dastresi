@@ -50,8 +50,8 @@ export default function PopularBrandsSlider() {
           className="w-full"
         >
           {baseCategories.map((item) => (
-            <SwiperSlide key={item.id}>
-              <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            <SwiperSlide className="p-4" key={item.id}>
+              <div className="flex bg-white flex-col items-center justify-center shadow-md rounded-xl p-6 cursor-pointer hover:shadow-xl transition-shadow duration-300">
                 <div className="w-32 h-32 relative mb-2">
                   <Image
                     src={item.image}
