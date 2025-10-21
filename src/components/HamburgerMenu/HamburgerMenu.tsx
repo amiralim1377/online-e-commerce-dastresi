@@ -1,6 +1,11 @@
 "use client";
 
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
 export default function HamburgerMenu() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="relative bg-white shadow-md p-4">
       <div className="flex items-center justify-between container mx-auto">
@@ -19,6 +24,14 @@ export default function HamburgerMenu() {
             <a href="#">تماس</a>
           </li>
         </ul>
+
+        {/* دکمه همبرگر برای موبایل */}
+        <button
+          className="md:hidden p-2 text-gray-700"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
       {/* منوی باز شونده موبایل */}
